@@ -9,6 +9,9 @@ python = "^3.10"
 jupyter = "^1.0.0"
 numpy = "^1.23.2"
 dask = "^2022.9.0"
+pandas = "^1.4.4"
+blaze = "^0.10.1"
+h5py = "^3.7.0"
 
 [tool.poetry.dev-dependencies]
 
