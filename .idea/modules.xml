@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/mo837-dask.iml" filepath="$PROJECT_DIR$/.idea/mo837-dask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dask-presentation.iml" filepath="$PROJECT_DIR$/.idea/dask-presentation.iml" />
     </modules>
   </component>
 </project>
