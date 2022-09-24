@@ -12,6 +12,7 @@ dask = "^2022.9.0"
 pandas = "^1.4.4"
 blaze = "^0.10.1"
 h5py = "^3.7.0"
+distributed = "^2022.9.1"
 
 [tool.poetry.dev-dependencies]
 
