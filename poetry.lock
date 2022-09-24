@@ -7,6 +7,18 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "archspec"
+version = "0.1.4"
+description = "A library to query system architecture"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.dependencies]
+click = {version = ">=8,<9", markers = "python_version >= \"3.6\" and python_version < \"4.0\""}
+six = ">=1.13.0,<2.0.0"
+
+[[package]]
 name = "argon2-cffi"
 version = "21.3.0"
 description = "The secure Argon2 password hashing algorithm."
@@ -361,6 +373,18 @@ description = "a heap with decrease-key and increase-key operations"
 category = "main"
 optional = false
 python-versions = "*"
+
+[[package]]
+name = "hpccm"
+version = "22.8.0"
+description = "HPC Container Maker"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+archspec = "*"
+six = "*"
 
 [[package]]
 name = "ipykernel"
@@ -1287,12 +1311,16 @@ heapdict = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "6c125c7200ef1cb5522cbf21e6ade827a97eb4bffcf22536c3ee770ee0ed246d"
+content-hash = "7c83e24071cd6b9bee0bdd15bf5d45d7727896fe5677678d61cfcfc4dfb5fc60"
 
 [metadata.files]
 appnope = [
     {file = "appnope-0.1.3-py2.py3-none-any.whl", hash = "sha256:265a455292d0bd8a72453494fa24df5a11eb18373a60c7c0430889f22548605e"},
     {file = "appnope-0.1.3.tar.gz", hash = "sha256:02bd91c4de869fbb1e1c50aafc4098827a7a54ab2f39d9dcba6c9547ed920e24"},
+]
+archspec = [
+    {file = "archspec-0.1.4-py2.py3-none-any.whl", hash = "sha256:e4c7807860a8fb949cc8c248c1b8545fe999ce12b125828d112d837434a2729d"},
+    {file = "archspec-0.1.4.tar.gz", hash = "sha256:b8d5eeb4caf892790ff1aa8ccef442a84187986aeab4da29417c9fe35532d94c"},
 ]
 argon2-cffi = [
     {file = "argon2-cffi-21.3.0.tar.gz", hash = "sha256:d384164d944190a7dd7ef22c6aa3ff197da12962bd04b17f64d4e93d934dba5b"},
@@ -1566,6 +1594,10 @@ h5py = [
 heapdict = [
     {file = "HeapDict-1.0.1-py3-none-any.whl", hash = "sha256:6065f90933ab1bb7e50db403b90cab653c853690c5992e69294c2de2b253fc92"},
     {file = "HeapDict-1.0.1.tar.gz", hash = "sha256:8495f57b3e03d8e46d5f1b2cc62ca881aca392fd5cc048dc0aa2e1a6d23ecdb6"},
+]
+hpccm = [
+    {file = "hpccm-22.8.0-py2.py3-none-any.whl", hash = "sha256:381b7448337ec92f5db3d89b9ff44af77548940371a17c15661ccb81ae98720d"},
+    {file = "hpccm-22.8.0.tar.gz", hash = "sha256:aea3a772ca0506ec3b034c589837862babab17af7eb627ccffb05cd5d89b0492"},
 ]
 ipykernel = [
     {file = "ipykernel-6.15.2-py3-none-any.whl", hash = "sha256:59183ef833b82c72211aace3fb48fd20eae8e2d0cae475f3d5c39d4a688e81ec"},

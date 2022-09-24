@@ -1,0 +1,25 @@
+version: '3'
+services:
+  scheduler:
+    networks:
+      - dask
+    ports:
+      - 9000:9000
+    env_file: .env
+    build:
+      context: cluster
+    command: "dask-scheduler --port ${SCHEDULER_PORT}"
+
+  worker:
+    networks:
+      - dask
+    env_file: .env
+    build:
+      context: cluster
+    command: "dask-worker scheduler:${SCHEDULER_PORT}"
+    depends_on:
+      - scheduler
+
+networks:
+  dask:
+
