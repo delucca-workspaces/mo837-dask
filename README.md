@@ -37,7 +37,7 @@ Now that you have the Dockerfile built, you can execute the following command to
 docker-compose up -d --scale worker=<num_workers>
 ```
 
-> **Warning**
+> **Note**
 >
 > You can set the num_workers variable to whatever number pleases you. This will be used by docker-compose to scale the number of workers
 
@@ -49,7 +49,7 @@ Now that everything is properly working, you can run the application with the fo
 poetry run python src/app.py --scheduler_url localhost:9000
 ```
 
-> **Warning**
+> **Note**
 >
 > If you don't want to execute it on the cluster, you can simply don't pass anything for the `--scheduler_url` argument
 
